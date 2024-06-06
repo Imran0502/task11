@@ -1,0 +1,25 @@
+nav{
+    border: 1px solidn black;
+    background-color: steelblue;
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+li{
+    text-decoration: none;
+    display: inline;
+    color: black;
+
+
+}
+
+li a{
+    text-decoration: none;
+    margin: 0px 20px;
+    color: black;
+    
+}
+
+
+

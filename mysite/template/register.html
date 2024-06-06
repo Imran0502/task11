@@ -1,0 +1,27 @@
+{%extends 'index.html'%}
+{%load crispy_forms_tags%}
+{% block title %}Register{% endblock title %}
+
+
+{%block content%}
+<div class="container-fluid" style="margin-top:50px;">
+    <div class="col-md-offset-4 col-md-4 mx-auto">
+    <h2 class="text-primary page-header text-center">Create a new account</h2>
+</div>
+<div class="col-md-offset-4 col-md-4 mx-auto">
+    <form method="POST" autocomplete="off">
+        {%csrf_token%}
+
+        {{form|crispy}}
+        <div class="col-md-offset-4 col-md-4 mx-auto">
+        <button type="submit" class="btn btn-primary" >Sign Up</button>
+    </div>
+    </form>
+
+</div>
+
+
+</div>
+
+
+{%endblock%}
